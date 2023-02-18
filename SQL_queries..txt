@@ -4,3 +4,5 @@ Create Database BigData
 Show Databases
 --Command to drop database
 Drop database database name
+-- use particular DB
+use database name
