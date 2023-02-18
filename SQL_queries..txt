@@ -2,3 +2,5 @@
 Create Database BigData
 ---Command to list down all the databases 
 Show Databases
+--Command to drop database
+Drop database database name
