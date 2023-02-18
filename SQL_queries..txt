@@ -7,4 +7,8 @@ Drop database database name
 -- use particular DB
 use database name
 -- command to create table 
-Create table if not exists tablename
+Create table if not exists employee
+( id int, 
+  name VARCHAR(49)
+);
+
