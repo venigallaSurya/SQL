@@ -11,4 +11,9 @@ Create table if not exists employee
 ( id int, 
   name VARCHAR(49)
 );
+-- Command to list down tables
+show tables;
+-- command to list down all the tables
+show create table tablename
+
 
