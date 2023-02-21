@@ -14,6 +14,17 @@ Create table if not exists employee
 -- Command to list down tables
 show tables;
 -- command to list down all the tables
-show create table tablename
+---show create table tablename
+create table ifnot exists employee
+(
+  id int,
+  name VARCHAR(59),
+  salary Double,
+  hiring_date DATE
+ );
+ 
+----insert data into table 
+insert into employee values(1,'si','200000','2025-01-22')
+
 
 
