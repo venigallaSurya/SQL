@@ -26,5 +26,15 @@ create table ifnot exists employee
 ----insert data into table 
 insert into employee values(1,'si','200000','2025-01-22')
 
-
+---- Creating constraints
+Create table if not exists employee_with_constraints_tmp
+(
+  id int not null,
+  name varchar(50) NOT NULL,
+  salary double,
+  hiring_date Date Default '2021-01-01',
+  constraint unique_id unique(id),
+  constraint salary_check CHECK(salary>1000)
+ );
+ 
 
