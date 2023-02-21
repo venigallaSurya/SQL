@@ -1,0 +1,15 @@
+-- Adding new column 
+Alter table employee add DOB date;
+
+--modify existing column in a TABLE or change datatype of name column or increase length of name column 
+alter table tablename modify column columnname varchar(100);
+
+-- delete existing column from given TABLE 
+alter table tablename drop column columnname;
+
+-- adding unique constraint 
+alter table tablename add constraint constraintname UNIQUE(columnname);
+
+
+
+
