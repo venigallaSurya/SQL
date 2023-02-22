@@ -10,6 +10,14 @@ alter table tablename drop column columnname;
 -- adding unique constraint 
 alter table tablename add constraint constraintname UNIQUE(columnname);
 
+-- creating table with Primary key 
 
+Create table employee
+(
+  id int,
+  name varchar(40),
+  age int,
+  constraint pk Primarykey (id)
+)
 
 
