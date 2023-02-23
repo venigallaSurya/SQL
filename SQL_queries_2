@@ -21,3 +21,22 @@ Create table employee
 )
 
 
+-- creating table with foreign key
+create table customer
+(
+  id int,
+  name varchar(59),
+  age int,
+  constraint pk Primary Key(id)
+);
+
+create table orders
+(
+  order_id int,
+  order_num int,
+  customer_id int,
+  age int,
+  constraint pk Primary Key(order_id),
+  constraint fk Foreign Key(customer_id) references customer(id)
+);
+
