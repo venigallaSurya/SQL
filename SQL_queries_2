@@ -40,3 +40,19 @@ create table orders
   constraint fk Foreign Key(customer_id) references customer(id)
 );
 
+--- unique values in the particluar table
+select count(distinct column_name) from tablename
+
+-- update table with new increment of 20 perent salary
+update employee  SET salary =salary+salary*0.2;
+
+-- where clause 
+select * from employee where hiring_date='2021-1-12';
+
+-- update the salary who joined on a particular data and salary greater than a particular value 
+
+Update salary where date='2022-01-11' and salary>6000
+
+--- delete statement 
+delete from employee  where hiring date='2021-01-11';
+
