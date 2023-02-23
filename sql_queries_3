@@ -1,0 +1,20 @@
+--Create table with auto increment 
+create table employee
+( id int autoincrement,
+  name varchar(49)
+  primary key(id)
+);
+When auto increment is present we need to make sure that it is added in primary key
+  
+--insert records 
+insert into tablename(column_name) values('values which are required')
+  
+-- multi updates
+update employee set age=20, salary=20000 where hiring_date='2020-01-21'
+
+--Limit 
+Select * from table limit 2;
+
+-- Sorting the data 
+Select * from table order by column name
+
