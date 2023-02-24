@@ -18,3 +18,28 @@ Select * from table limit 2;
 -- Sorting the data 
 Select * from table order by column name
 
+---  table and data for group by 
+ 
+ create table order_date
+ (
+    cust_id int,
+    order_id int,
+    country varchar(50),
+    state varchar(50)
+ );
+ 
+ Insert into order_date values(1,20,'USA','Seatle');
+ Insert into order_date values(2,30,'USA','Seatle');
+ Insert into order_date values(3,40,'USA','WDC');
+ Insert into order_date values(4,60,'India','AP');
+ Insert into order_date values(5,90,'India','Sikkim');
+ Insert into order_date values(6,121,'UK','London');
+ 
+ select count(cust_id), state from order_date group by country
+ 
+ Apart from the columns which are not the part of group by statement they need to be a part of agregate functions
+ 
+ 
+ 
+ 
+ 
