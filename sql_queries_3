@@ -48,6 +48,9 @@ So for the above case we observe that only group by column is mentioned in the s
  where and group by which sequence should be followed?
   first where clause followed by group by clause 
  
+ query to print distinct states present in the dataset for each country?
+ select country, GROUP_CONCAT(state) as states_in_country from orders_data group by country
+ 
  
  
  
