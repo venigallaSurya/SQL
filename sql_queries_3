@@ -45,6 +45,8 @@ Select * from table order by column name
  
 So for the above case we observe that only group by column is mentioned in the select statement as a result we don't use aggregate function
  
+ where and group by which sequence should be followed?
+  first where clause followed by group by clause 
  
  
  
