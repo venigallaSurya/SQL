@@ -39,6 +39,13 @@ Select * from table order by column name
  
  Apart from the columns which are not the part of group by statement they need to be a part of agregate functions
  
+ -- Use of having clause
+ having is followed after groupby
+ select country from orderdate group by country having count(*)=1;
+ 
+So for the above case we observe that only group by column is mentioned in the select statement as a result we don't use aggregate function
+ 
+ 
  
  
  
